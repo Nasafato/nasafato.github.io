@@ -1,80 +1,64 @@
 <!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
 
 <head>
   <meta charset="utf-8">
+  <!-- If you delete this meta tag World War Z will become a reality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Gou</title>
 
-  <title>Resume</title>
+  <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
 
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css">
 
-  <script src="js/jQuery.js"></script>
+  <script src="js/vendor/modernizr.js"></script>
 
-  <script src="js/helper.js"></script>
-
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
-  <meta name="viewport" content="width=device-width">
 </head>
-<body unresolved>
-  <div id="main">
-    <div id="header" class="center-content clearfix">
-      <nav>
-        <ul>
-          <li><a href="#Work">Work</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#Education">Education</a></li>
-        </ul>
-      </nav>
-      <hr>
-      <ul id="topContacts" class='flex-box'></ul>
-    </div>
-    <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
-      <a name="Work">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <a name="Projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class='gray'>
-      <a name="Education">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
-      <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
+<body>
+  <div class = "row full-width">
+      <div class = "row full-width" id="navBar">
+        <nav class="transparent top-bar full-width" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#">Alan Gou</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          </ul>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li><a href="#" id="transparent">Left Nav Button</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class = "row full-width">
+        <figure id="mainBG">
+          <img src = "images/Medium_FrontPageBG1280x800.jpg">
+        </figure>
+      </div>
+      <div class = "row">
+        <main>
+          <div class = "row">
+            <div class = "small-12 columns">
+              <h3>Background</h3>
+            </div>
+          </div>
+        </main>
+      </div>
   </div>
 
-  <script src="js/resumeBuilder.js"></script>
-  <script type="text/javascript">
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.backgroundColor = 'black'
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = 'black';
+    <!-- body content here -->
 
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.backgroundColor = 'black';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.backgroundColor = 'black';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.backgroundColor = 'black';
-    }
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
   </script>
 </body>
 </html>

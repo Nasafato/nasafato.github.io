@@ -1,0 +1,51 @@
+.transparent {
+  background: transparent;
+}
+
+#transparent {
+  background: transparent;
+}
+
+a {
+  background: transparent;
+}
+
+.top-bar.expanded .title-area, 
+.contain-to-grid, 
+.top-bar, 
+.top-bar-section ul, 
+.top-bar-section ul li, 
+.top-bar-section li:not(.has-form) a:not(.button), 
+.top-bar-section .dropdown li a, 
+.top-bar-section .dropdown li:not(.has-form) a:not(.button), 
+.top-bar-section li:not(.has-form) a:not(.button):hover,
+.top-bar-section li:not(.has-form) a:not(.button):hover
+{
+  background:transparent ;
+}
+
+.row.full-width {
+  width: 100%;
+}
+
+.top-bar.full-width {
+  width: 100%;
+}
+
+#mainBG {
+  overflow: hidden;
+  z-index: -1;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+main {
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
