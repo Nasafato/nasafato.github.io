@@ -7,7 +7,6 @@
 .top-bar-section .dropdown li a, 
 .top-bar-section .dropdown li:not(.has-form) a:not(.button), 
 .top-bar-section li:not(.has-form) a:not(.button):hover,
-.top-bar-section li:not(.has-form) a:not(.button):hover,
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button),
 .top-bar-section .dropdown li.title h5, 
 .top-bar-section .dropdown li.parent-link,
@@ -24,6 +23,9 @@
   padding-right: .75em;
 }
 
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  color: #5E5E5E;
+}
 /* makes menu icon dark grey instead of white */
 .top-bar .toggle-topbar.menu-icon a span::after {
   box-shadow: 
@@ -49,6 +51,7 @@
 #about {
   color: #0E0E0E;
   text-decoration: none;
+  cursor: text;
 }
 
 .about {
@@ -68,6 +71,7 @@
 
 
 
+
 /* Footer */
 
 footer {
@@ -83,4 +87,8 @@ footer {
 a i {
   color: #0E0E0E;
   text-decoration: none;
+}
+
+a i:hover {
+  color: #5E5E5E;
 }
