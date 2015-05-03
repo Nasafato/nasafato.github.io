@@ -1,3 +1,7 @@
+body {
+  background-color: #000000;
+}
+
 .top-bar.expanded .title-area, 
 .contain-to-grid, 
 .top-bar, 
@@ -9,32 +13,53 @@
 .top-bar-section li:not(.has-form) a:not(.button):hover,
 .top-bar-section li:not(.has-form) a:not(.button):hover
 {
-  font-family: "Meiryo";
   background: transparent;
+font-family: 'Roboto', sans-serif;
 }
 
-.top-bar-section ul li {
-  margin: 5px;
+.inner-wrap,
+.tab-bar,
+.tab-bar .right-small,
+ul.off-canvas-list li a
+{
+  border: none;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+.frontpage-image figure{
+  margin: 0;
+  z-index: -1;
 }
 
 .full-width {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial;
 }
 
-body {
-  background-image: url("../images/Medium_FrontPageBG1280x800.jpg");
-  background-repeat: no-repeat;
+.about {
+  padding: 1em;
+  background: white;
+ 
 }
 
-.banner h2{
-  font-family: "Meiryo";
-  color: #ffffff;
+.about h2{
+  color: #0E0E0E;
+  font-family: 'Roboto', sans-serif;
 }
 
-.filler {
-  height: 100vh;
+.about p {
+  color: #909090;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
+
+
+
+
+
+
+
 
