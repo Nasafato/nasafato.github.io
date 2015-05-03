@@ -32,7 +32,6 @@
   0 14px 0 1px #0E0E0E;
 }
 
-
 #celestial{
   width: 100%;
   height: 300px;
@@ -40,7 +39,10 @@
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  background-image: url("../images/celestial_fireworks_medium_800_1x.jpg");
+  background-image: -webkit-image-set(
+    url("../images/celestial_fireworks-800_medium_1x.jpg") 1x,
+    url("../images/celestial_fireworks-1600_large_2x.jpg") 2x
+    );
   margin-bottom: 1em;
 }
 
@@ -62,4 +64,23 @@
   color: #909090;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Footer */
+
+footer {
+  margin-bottom: 1em;
+}
+
+[class*="fi-social-"]:before {
+  font-size: 36px;
+  margin-right: .25em;
+  margin-left: .25em;
+}
+
+a i {
+  color: #0E0E0E;
+  text-decoration: none;
 }
