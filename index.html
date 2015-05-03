@@ -6,72 +6,54 @@
   <meta charset="utf-8">
   <!-- If you delete this meta tag World War Z will become a reality -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Alan Gou</title>
 
   <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
-
+ 
   <!-- If you are using the gem version, you need this only -->
   <link rel="stylesheet" href="css/app.css">
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400' rel='stylesheet' type='text/css'>
 
   <script src="js/vendor/modernizr.js"></script>
 
 </head>
 <body>
-  <div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-      <nav class="top-bar hide-for-small" data-topbar></nav>
-      <nav class="tab-bar show-for-small">
-        <section class="right-small">
-          <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-        </section>
-      </nav>
-      <aside class="right-off-canvas-menu">
-        <ul class="off-canvas-list">
-          <li><a href="#">About</a></li>
-          <li><a href="files/AlanGouResume_April2014.pdf">Resume</a></li>
-        </ul>
-      </aside>
-      <section class="main-section">
-        <div class="row frontpage-image full-width">
-          <div class="large-12 columns full-width">
-            <figure class="frontpage-image">
-              <img srcset="
-              images/moon_appears_medium_1x.jpg 1x,
-              images/moon_appears_large_2x.jpg 2x
-              ", src="images/moon_appears_large_2x.jpg">
-            </figure>
-          </div>
-        </div>
-      </section>
-      <a class="exit-off-canvas"></a>
-    </div>
-  </div>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name"></li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right text-right">
+      <li><a href="#about">About</a></li>
+      <li><a href="files/AprilGouResume_April2014.pdf">Resume</a></li>
+    </ul>
+
+    <!-- Left Nav Section -->
+
+  </section>
+</nav>
+
 <!-- close the off-canvas menu -->
   <section class="row about">
+    <div id="celestial" class="circular small-4 column small-centered"></div>
     <div class="large-12 column text-center">
-      <h2>About</h2>
+      <h2><a id="about" name="about">About</a></h2>
       <p>I am a computer science, math, and economics major about to start studying at Berkeley</p>
     </div>
   </section>
 
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
-<script>
-  $(document).foundation({
-    offcanvas : {
-    // Sets method in which offcanvas opens.
-    // [ move | overlap_single | overlap ]
-    open_method: 'overlap', 
-    // Should the menu close when a menu link is clicked?
-    // [ true | false ]
-    close_on_click : false
-  }
-});
-</script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>

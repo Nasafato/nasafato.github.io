@@ -1,7 +1,3 @@
-body {
-  background-color: #000000;
-}
-
 .top-bar.expanded .title-area, 
 .contain-to-grid, 
 .top-bar, 
@@ -11,38 +7,49 @@ body {
 .top-bar-section .dropdown li a, 
 .top-bar-section .dropdown li:not(.has-form) a:not(.button), 
 .top-bar-section li:not(.has-form) a:not(.button):hover,
-.top-bar-section li:not(.has-form) a:not(.button):hover
+.top-bar-section li:not(.has-form) a:not(.button):hover,
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button),
+.top-bar-section .dropdown li.title h5, 
+.top-bar-section .dropdown li.parent-link,
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button),
+.top-bar .toggle-topbar.menu-icon a,
+.top-bar-section ul li:hover:not(.has-form) > a
 {
-  background: transparent;
-font-family: 'Roboto', sans-serif;
-}
-
-.inner-wrap,
-.tab-bar,
-.tab-bar .right-small,
-ul.off-canvas-list li a
-{
-  border: none;
-  background: transparent;
+  background: #FFFFFF;
+  color: #0E0E0E;
   font-family: 'Roboto', sans-serif;
 }
 
-.frontpage-image figure{
-  margin: 0;
-  z-index: -1;
+.top-bar-section ul li a {
+  padding-right: .75em;
 }
 
-.full-width {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-  width: 100%;
+/* makes menu icon dark grey instead of white */
+.top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 
+  0 0 0 1px #0E0E0E, 
+  0 7px 0 1px #0E0E0E, 
+  0 14px 0 1px #0E0E0E;
+}
+
+
+#celestial{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background-image: url("../images/celestial_fireworks_medium_800_1x.jpg");
+  margin-bottom: 1em;
+}
+
+#about {
+  color: #0E0E0E;
+  text-decoration: none;
 }
 
 .about {
   padding: 1em;
-  background: white;
- 
 }
 
 .about h2{
