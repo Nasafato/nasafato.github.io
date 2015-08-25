@@ -130,7 +130,7 @@ ul.slick-dots {
 /* Footer */
 
 footer {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 [class*="fi-social-"]:before {
