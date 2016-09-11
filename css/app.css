@@ -4,17 +4,22 @@ html, body, .page-wrapper {
 
 body {
   background: yellow;
+  font-family: "Helvetica", Verdana, Geneva, Tahoma, sans-serif
 }
 
 .page-header {
+  width: 100%;
+  position: fixed;
   height: 40px;
   background-color: green;
 }
 
 .page-content {
+  padding-top: 60px;
   height: 100%;
 }
 
+/* header styling */
 ul.header-menu {
   text-align: center;
   list-style: none;
@@ -34,4 +39,34 @@ ul.header-menu li a {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* page content */
+.content-text {
+  font-size: 1.3rem;
+}
+
+/* About Me */
+div#about-me {
+  text-align: center;
+}
+
+div#about-me h1 {
+  margin: 20px 0 20px 0;
+  font-size: 3rem;
+}
+
+#about-me #portrait {
+  border-radius: 50%;
+  height: 200px;
+
+}
+
+div.page-section {
+  margin: 40px;
+}
+
+div.page-post {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
