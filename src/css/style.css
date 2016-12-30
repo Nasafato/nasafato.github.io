@@ -12,6 +12,8 @@ a {
   padding: 20px 5px;
   background-color: #B8EFE5;
   text-decoration: none;
+  color: #4F5566
+
 }
 
 a:visited {
@@ -23,34 +25,3 @@ a:hover {
   color: #FFF6ED;
 }
 
-
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  text-align: center;
-  flex: 1;
-  display: flex;
-}
-
-nav a {
-  flex: 1 1 100%;
-  display: flex;
-  align-items: center;
-}
-
-nav span {
-  width: 100%;
-}
-
-.content-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 36px;
-}
