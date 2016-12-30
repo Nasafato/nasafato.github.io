@@ -83,6 +83,29 @@ a:hover {
   line-height: 30px;
 }
 
+@media (min-width: 500px){
+  .MainPage {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 800px){
+  .MainPage {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+}
+
+.Navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  height: 100%;
+  background: red;
+}
 
 
 
