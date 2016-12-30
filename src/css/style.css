@@ -1,13 +1,14 @@
 html, body {
   box-sizing: border-box;
-  background-color: #FFF4E9;
+  /*background-color: #FFF4E9;*/
+  background-color: #FFFBFE;
   margin: 0;
   font-weight: 100;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #4F5566
 }
 
-a {
+/*a {
   font-size: 20px;
   padding: 20px 5px;
   background-color: #B8EFE5;
@@ -24,4 +25,65 @@ a:hover {
   background-color: #4F5566;
   color: #FFF6ED;
 }
+*/
+
+/* Main Page */
+
+.App {
+  margin: 20px 20px;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+}
+
+.Header-menuBurger {
+  cursor: pointer;
+}
+
+.Header-menuBurger-line {
+  height: 5px;
+  width: 40px;
+  margin-bottom: 5px;
+  background-color: #72d69a;
+}
+
+.Header-logo {
+  color: #72d69a;
+  font-size: 40px;
+}
+
+.Header-spacer {
+  flex: 1;
+}
+
+.l-01 {
+  width: 38px;
+}
+
+.l-02 {
+  width: 32px;
+}
+
+.l-03 {
+  width: 28px;
+}
+
+.MainPage {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.MainPage-paragraph {
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+
+
 
