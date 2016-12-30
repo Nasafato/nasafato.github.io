@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   font-weight: 100;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #4F5566
 }
 
 a {
@@ -13,11 +14,16 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+   color: #4F5566;
+}
+
 a:hover {
   background-color: #4F5566;
   color: #FFF6ED;
-
 }
+
+
 
 nav ul {
   list-style: none;
@@ -47,5 +53,4 @@ nav span {
   margin: 0 auto;
   text-align: center;
   font-size: 36px;
-
 }
