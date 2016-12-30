@@ -1,107 +1,51 @@
-html {
-  font-size: 10px;
+html, body {
+  box-sizing: border-box;
+  background-color: #FFF4E9;
+  margin: 0;
+  font-weight: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body, .page-wrapper {
-  height: 100%;
-  font-size: 1.7rem;
-  line-height: 1.5;
-}
-
-body {
-  background: white;
-  font-family: "Helvetica", Verdana, Geneva, Tahoma, sans-serif
-}
-
-.page-header {
-  width: 100%;
-  position: fixed;
-  height: 40px;
-  background-color: lightgrey;
-}
-
-.page-content {
-  padding-top: 50px;
-  height: 100%;
-}
-
-.anchor {
-  padding-top: 50px;
-}
-
-/* header styling */
-ul.header-menu {
-  text-align: center;
-  list-style: none;
-}
-
-ul.header-menu li {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-ul.header-menu li a {
+a {
+  font-size: 20px;
+  padding: 20px 5px;
+  background-color: #B8EFE5;
   text-decoration: none;
-  color: black;
 }
 
-ul.header-menu li a:visited {
-  color: black;
+a:hover {
+  background-color: #4F5566;
+  color: #FFF6ED;
+
 }
 
-ul.header-menu li a:hover {
-  color: grey;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.vertical-align {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* page content */
-
-/* About Me */
-div#about-me {
-  margin: 0 40px 20px 40px;
+nav li {
   text-align: center;
+  flex: 1;
+  display: flex;
 }
 
-div#about-me h1 {
-  font-size: 4rem;
+nav a {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
 }
 
-#about-me #portrait {
-  border-radius: 50%;
-  height: 200px;
-
+nav span {
+  width: 100%;
 }
 
-div.page-section {
-  margin: 0 60px 60px 60px;
-}
-
-
-h1#blog-header {
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
-  font-size: 4rem;
-}
+  font-size: 36px;
 
-/* Blog Post */
-div.blog-post {
-  margin: 0 40px 50px 40px;
-}
-
-div.blog-post:first {
-  margin-top: 0px;
-}
-
-div.blog-post-date {
-  font-size: .8rem;
-}
-
-h1.blog-post-header {
-  font-size: 2rem;
-  font-weight: bold;
 }
