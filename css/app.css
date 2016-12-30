@@ -1,9 +1,15 @@
-html, body, .page-wrapper {
+html {
+  font-size: 10px;
+}
+
+body, .page-wrapper {
   height: 100%;
+  font-size: 1.7rem;
+  line-height: 1.5;
 }
 
 body {
-  background: yellow;
+  background: white;
   font-family: "Helvetica", Verdana, Geneva, Tahoma, sans-serif
 }
 
@@ -11,12 +17,16 @@ body {
   width: 100%;
   position: fixed;
   height: 40px;
-  background-color: green;
+  background-color: lightgrey;
 }
 
 .page-content {
-  padding-top: 60px;
+  padding-top: 50px;
   height: 100%;
+}
+
+.anchor {
+  padding-top: 50px;
 }
 
 /* header styling */
@@ -33,6 +43,15 @@ ul.header-menu li {
 
 ul.header-menu li a {
   text-decoration: none;
+  color: black;
+}
+
+ul.header-menu li a:visited {
+  color: black;
+}
+
+ul.header-menu li a:hover {
+  color: grey;
 }
 
 .vertical-align {
@@ -42,18 +61,15 @@ ul.header-menu li a {
 }
 
 /* page content */
-.content-text {
-  font-size: 1.3rem;
-}
 
 /* About Me */
 div#about-me {
+  margin: 0 40px 20px 40px;
   text-align: center;
 }
 
 div#about-me h1 {
-  margin: 20px 0 20px 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 #about-me #portrait {
@@ -63,10 +79,29 @@ div#about-me h1 {
 }
 
 div.page-section {
-  margin: 40px;
+  margin: 0 60px 60px 60px;
 }
 
-div.page-post {
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+h1#blog-header {
+  text-align: center;
+  font-size: 4rem;
+}
+
+/* Blog Post */
+div.blog-post {
+  margin: 0 40px 50px 40px;
+}
+
+div.blog-post:first {
+  margin-top: 0px;
+}
+
+div.blog-post-date {
+  font-size: .8rem;
+}
+
+h1.blog-post-header {
+  font-size: 2rem;
+  font-weight: bold;
 }
