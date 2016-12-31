@@ -10,25 +10,26 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <CSSTransitionGroup
-                className="Navbar"
-                component="nav"
-                transitionName="Navbar"
-                transitionEnterTimeout={250}
-                transitionLeaveTimeout={250}
-                >
-                <ul key="Navbar">
-                    <li>Projects</li>
-                    <li>Code</li>
-                    <li>Thoughts</li>
+            <nav>
+                <ul className={this.props.menuOn ? 'Navbar Navbar-active' : 'Navbar Navbar-closed'}>
+                    <li className="Navbar-goback">
+                        <div onClick={this.props.handleMenuToggle} className="Navbar-closebutton">
+                            <div className="Navbar-closebutton-l-01"></div>
+                            <div className="Navbar-closebutton-l-02"></div>
+                        </div>
+                    </li>
+                    <li className="Navbar-link">Projects</li>
+                    <li className="Navbar-link">Code</li>
+                    <li className="Navbar-link">Thoughts</li>
                 </ul>
-            </CSSTransitionGroup>
+            </nav>
         )
     }
 }
 
 Navbar.propTypes = {
-    menuOn: React.PropTypes.bool.isRequired
+    menuOn: React.PropTypes.bool.isRequired,
+    handleMenuToggle: React.PropTypes.func.isRequired
 }
 
 export default Navbar;
