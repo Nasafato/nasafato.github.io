@@ -19,9 +19,9 @@ class Navbar extends React.Component {
                                 <div className="Navbar-closebutton-l-02"></div>
                             </div>
                         </li>
-                        <li className="Navbar-link">Projects</li>
-                        <li className="Navbar-link">Code</li>
-                        <li className="Navbar-link">Thoughts</li>
+                        <li className="Navbar-list-item"><a className="Navbar-link" href="#">Projects</a></li>
+                        <li className="Navbar-list-item"><a className="Navbar-link" href="#">Code</a></li>
+                        <li className="Navbar-list-item"><a className="Navbar-link" href="#">Thoughts</a></li>
                     </ul>
                 </div>
             </nav>
