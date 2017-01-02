@@ -196,7 +196,7 @@ a:hover {
   width: 40px;
   height: 5px;
   /*background: #d6d6d7;*/
-  background: #505050;
+  background: #d6d6d7;
   transform: rotate(45deg);
 }
 
@@ -206,9 +206,13 @@ a:hover {
   left: 19px;
   width: 40px;
   height: 5px;
-  background: #505050;
+  background: #d6d6d7;
   transform: rotate(-45deg);
   /*background: #d6d6d7;*/
+}
+
+.Navbar-closebutton:hover .Navbar-closebutton-l-01, .Navbar-closebutton:hover .Navbar-closebutton-l-02 {
+  background: #505050;
 }
 
 
