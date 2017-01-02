@@ -1,5 +1,6 @@
 import React from 'react';
 import CSSTransitionGroup from 'react-addons-css-transition-group' // ES6
+import { Link } from 'react-router';
 
 // import '../css/Navbar.css';
 
@@ -19,9 +20,9 @@ class Navbar extends React.Component {
                                 <div className="Navbar-closebutton-l-02"></div>
                             </div>
                         </li>
-                        <li className="Navbar-list-item"><a className="Navbar-link" href="#">Projects</a></li>
-                        <li className="Navbar-list-item"><a className="Navbar-link" href="#">Code</a></li>
-                        <li className="Navbar-list-item"><a className="Navbar-link" href="#">Thoughts</a></li>
+                        <li className="Navbar-list-item"><Link className="Navbar-link" to="/projects">Projects</Link></li>
+                        <li className="Navbar-list-item"><Link className="Navbar-link" to="/code">Code</Link></li>
+                        <li className="Navbar-list-item"><Link className="Navbar-link" to="/thoughts">Thoughts</Link></li>
                     </ul>
                 </div>
             </nav>

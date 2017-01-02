@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { BrowserRouter, Match, Miss } from 'react-router';
+import Header from './components/Header';
+import ProjectPage from './components/ProjectPage'
+import { Match, Miss, HashRouter } from 'react-router';
 import './css/style.css';
+
 
 const Root = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Match exactly pattern="/" component={App} />
+        <Match pattern="/projects" component={ProjectPage} />
       </div>
-    </BrowserRouter>
+    </HashRouter>
 
   )
 }
