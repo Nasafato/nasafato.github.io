@@ -9,13 +9,7 @@ import './css/style.css';
 
 const Root = () => {
   return (
-    <HashRouter>
-      <div>
-        <Match exactly pattern="/" component={App} />
-        <Match pattern="/projects" component={ProjectPage} />
-      </div>
-    </HashRouter>
-
+    <App />
   )
 }
 

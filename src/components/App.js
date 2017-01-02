@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
 import MainPage from './MainPage';
+import ProjectPage from './ProjectPage';
+import { HashRouter, Match } from 'react-router';
 
 class App extends React.Component {
   constructor() {
@@ -27,14 +29,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Navbar handleMenuToggle={this.handleMenuToggle} menuOn={this.state.menuOn} />
-        <div className={this.state.menuOn ? "cover cover-on" : "cover"}></div>
-        <Header
-          handleMenuToggle={this.handleMenuToggle}
-          />
-        <MainPage />
-      </div>
+      <HashRouter>
+        <div className="App">
+          <Navbar handleMenuToggle={this.handleMenuToggle} menuOn={this.state.menuOn} />
+          <div className={this.state.menuOn ? "cover cover-on" : "cover"}></div>
+          <Header
+            handleMenuToggle={this.handleMenuToggle}
+            />
+          <Match exactly pattern="/" component={MainPage} />
+          <Match pattern="/projects" component={ProjectPage} />
+        </div>
+      </HashRouter>
     )
   }
 }
