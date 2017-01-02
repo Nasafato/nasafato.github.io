@@ -80,15 +80,43 @@ a:hover {
 
 .l-01 {
   width: 38px;
+  transition: width 0.2s;
 }
 
 .l-02 {
   width: 32px;
+  transition: width 0.2s;
 }
 
 .l-03 {
   width: 28px;
+  transition: width 0.2s;
 }
+
+.l-04 {
+  transition: width 0.2s;
+}
+
+.Header-menuBurger:hover .l-01 {
+  width: 32px;
+  transition: width 0.20s;
+}
+
+.Header-menuBurger:hover .l-02 {
+  width: 38px;
+  transition: width 0.2s;
+}
+
+.Header-menuBurger:hover .l-03 {
+  width: 40px;
+  transition: width 0.2s;
+}
+
+.Header-menuBurger:hover .l-04 {
+  width: 28px;
+  transition: width 0.2s;
+}
+
 
 .MainPage {
   margin-top: 10px;
