@@ -3,6 +3,9 @@ import Navbar from './Navbar';
 import Header from './Header';
 import MainPage from './MainPage';
 import ProjectPage from './ProjectPage';
+import CodePage from './CodePage';
+import ThoughtsPage from './ThoughtsPage';
+
 import { HashRouter, Match } from 'react-router';
 
 class App extends React.Component {
@@ -38,6 +41,8 @@ class App extends React.Component {
             />
           <Match exactly pattern="/" component={MainPage} />
           <Match pattern="/projects" component={ProjectPage} />
+          <Match pattern="/code" component={CodePage} />
+          <Match pattern="/thoughts" component={ThoughtsPage} />
         </div>
       </HashRouter>
     )

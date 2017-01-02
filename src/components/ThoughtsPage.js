@@ -2,19 +2,19 @@ import React from 'react';
 
 // import '../css/Navbar.css';
 
-class ProjectPage extends React.Component {
+class ThoughtsPage extends React.Component {
     constructor() {
         super();
     }
 
     render() {
         return (
-            <div className="ProjectPage">
-                <h2>Projects</h2>
+            <div className="ThoughtsPage">
+                <h2>Thoughts</h2>
             </div>
         )
     }
 }
 
 
-export default ProjectPage;
+export default ThoughtsPage;
