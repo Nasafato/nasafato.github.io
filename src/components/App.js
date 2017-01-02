@@ -29,6 +29,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar handleMenuToggle={this.handleMenuToggle} menuOn={this.state.menuOn} />
+        <div className={this.state.menuOn ? "cover cover-on" : "cover"}></div>
         <Header
           handleMenuToggle={this.handleMenuToggle}
           />

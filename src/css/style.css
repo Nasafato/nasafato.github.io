@@ -34,13 +34,28 @@ a:hover {
 
 /* Main Page */
 
-.App {
-  margin: 20px 20px;
+.cover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFBFE;
+  opacity: 0;
+  transition: opacity 1.0s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.cover-on {
+  transition: opacity 1.0s;
+  opacity: 1;
+  z-index: 10;
+}
+
+
 .Header {
+  position: relative;
+  padding: 20px 20px;
   display: flex;
   align-items: center;
+  z-index: 0;
 }
 
 .Header-menuBurger {
@@ -76,7 +91,8 @@ a:hover {
 }
 
 .MainPage {
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -105,28 +121,33 @@ a:hover {
 
 .Navbar {
   position: absolute;
+  list-style: none;
   left: 0;
   top: 0;
   transform: translateX(-100%);
-  height: 100vh;
   width: 100%;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.4)
-}
-
-.Navbar-closed {
-  transform: translateX(-100%);
+  transition: transform 1.0s ease-in;
+  z-index: 1000;
 }
 
 .Navbar-active {
+  transition: transform 1.0s;
   transform: translateX(0);
+}
+
+.Navbar-list {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  list-style: none;
+}
+
+.Navbar-link:nth-child(2) {
+  margin-top: 10px;
 }
 
 .Navbar-link {
-  flex-basis: 20px;
+  flex-basis: 30px;
 }
 
 .Navbar-closebutton {
