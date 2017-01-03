@@ -20,6 +20,7 @@ class Navbar extends React.Component {
                                 <div className="Navbar-closebutton-l-02"></div>
                             </div>
                         </li>
+                        <li className="Navbar-list-item"><Link onClick={this.props.handleMenuToggle} className="Navbar-link" to="/">Home</Link></li>
                         <li className="Navbar-list-item"><Link onClick={this.props.handleMenuToggle} className="Navbar-link" to="/projects">Projects</Link></li>
                         <li className="Navbar-list-item"><Link onClick={this.props.handleMenuToggle} className="Navbar-link" to="/code">Code</Link></li>
                         <li className="Navbar-list-item"><Link onClick={this.props.handleMenuToggle} className="Navbar-link" to="/thoughts">Thoughts</Link></li>
